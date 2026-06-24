@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MAESTRO — The 7-Layer Threat Modeling Framework for Agentic AI</title>
+<meta name="description" content="MAESTRO: a 7-layer threat modeling framework purpose-built for agentic AI systems. By Ken Huang, CSA Fellow & CEO of DistributedApps.ai." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="top">
+  <a class="nav__brand" href="#top">
+    <span class="nav__logo">◆</span> MAESTRO
+  </a>
+  <nav class="nav__links">
+    <a href="#why">Why</a>
+    <a href="#layers">7 Layers</a>
+    <a href="#method">Method</a>
+    <a href="#tool">Tool</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn--accent nav__cta" href="https://maestro-sentinel.com/" target="_blank" rel="noopener">Launch Tool ↗</a>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__grid"></div>
+  <div class="hero__inner">
+    <span class="eyebrow">Threat Modeling · Agentic AI Security</span>
+    <h1 class="hero__title">MAESTRO</h1>
+    <p class="hero__sub">The <strong>7-Layer Threat Modeling Framework</strong> for Agentic AI</p>
+    <p class="hero__by">
+      Presented by <strong>Ken Huang</strong> — Fellow &amp; Co-Chair of CSA AI Safety Working Groups · CEO, DistributedApps.ai
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn--accent" href="#layers">Explore the 7 Layers</a>
+      <a class="btn btn--ghost" href="https://maestro-sentinel.com/" target="_blank" rel="noopener">Try MAESTRO Sentinel ↗</a>
+    </div>
+  </div>
+  <div class="hero__scroll">scroll ↓</div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section section--alt" id="about">
+  <div class="wrap">
+    <span class="kicker">About the Author</span>
+    <h2 class="h2">Ken Huang, CISSP</h2>
+    <div class="about">
+      <ul class="about__list">
+        <li><span>📚</span> AI Book Author &amp; Speaker</li>
+        <li><span>🎓</span> Adjunct Professor, University of San Francisco</li>
+        <li><span>🛡️</span> OWASP AIVSS Project Lead</li>
+        <li><span>🤝</span> Fellow &amp; Co-Chair of two CSA AI Safety Working Groups</li>
+        <li><span>🔟</span> Core Member, OWASP Top 10 for LLM Applications</li>
+        <li><span>🧑‍🏫</span> EC-Council Instructor — Generative AI for Cyber Security</li>
+        <li><span>🚀</span> CEO of DistributedApps.ai</li>
+      </ul>
+      <figure class="about__books">
+        <img src="assets/books.png" alt="Books authored by Ken Huang on AI security and agentic AI" />
+        <figcaption>Selected works on AI &amp; agentic security</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY ================= -->
+<section class="section" id="why">
+  <div class="wrap">
+    <span class="kicker">The Problem</span>
+    <h2 class="h2">Why agentic AI needs a new threat model</h2>
+    <p class="lead">Legacy frameworks were designed for deterministic software with fixed trust boundaries.
+      Agentic systems break every one of those assumptions.</p>
+
+    <div class="why__grid">
+      <div class="card">
+        <h3 class="h3">Legacy frameworks &amp; where they stop</h3>
+        <table class="ftable">
+          <thead><tr><th>Framework</th><th>Focus</th><th>Methodology</th><th>Use cases</th></tr></thead>
+          <tbody>
+            <tr><td><b class="tag tag--blue">STRIDE</b></td><td>Six threat categories</td><td>Predefined threat categorization</td><td>Small teams, app/network security</td></tr>
+            <tr><td><b class="tag tag--orange">DREAD</b></td><td>Quantitative risk scoring</td><td>Numerical risk prioritization</td><td>Risk prioritization, mature orgs</td></tr>
+            <tr><td><b class="tag tag--green">PASTA</b></td><td>Threats vs. business goals</td><td>Risk-centric, SDLC integration</td><td>Large enterprises, compliance</td></tr>
+            <tr><td><b class="tag tag--teal">OCTAVE</b></td><td>Stakeholder operational risk</td><td>Asset-based, collaborative</td><td>Structured risk assessment</td></tr>
+            <tr><td><b class="tag tag--violet">LINDDUN</b></td><td>Privacy threats</td><td>Privacy-focused risk analysis</td><td>Healthcare, finance, privacy apps</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card card--draw">
+        <h3 class="h3">Where legacy assumptions fail for agents</h3>
+        <div class="draw" id="fig-limitations" data-fig="limitations"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7 LAYERS ================= -->
+<section class="section section--dark" id="layers">
+  <div class="wrap">
+    <span class="kicker kicker--light">The Framework</span>
+    <h2 class="h2 h2--light">MAESTRO — a 7-layer threat modeling approach</h2>
+    <p class="lead lead--light">Multi-Agent Environment, Security, Threat, Risk &amp; Outcome. Each layer is its own attack surface —
+      and threats cascade <em>across</em> layers.</p>
+    <div class="draw draw--wide" id="fig-mindmap" data-fig="mindmap"></div>
+  </div>
+</section>
+
+<!-- ================= METHOD ================= -->
+<section class="section" id="method">
+  <div class="wrap">
+    <span class="kicker">How to Apply It</span>
+    <h2 class="h2">Performing a MAESTRO threat model</h2>
+
+    <div class="step">
+      <div class="step__badge">Step 1</div>
+      <h3 class="h3">Layer mapping</h3>
+      <p class="muted">Map every component of your system onto the seven layers. Example: mapping to Anthropic's Model Context Protocol (MCP).</p>
+    </div>
+    <div class="draw draw--wide" id="fig-mapping" data-fig="mapping"></div>
+
+    <div class="step step--mt">
+      <div class="step__badge step__badge--accent">Step 2</div>
+      <h3 class="h3">Focus on the agentic factors</h3>
+      <p class="muted">Within each layer, reason about the five properties that make agents fundamentally different from traditional software.</p>
+    </div>
+    <div class="draw draw--wide" id="fig-factors" data-fig="factors"></div>
+  </div>
+</section>
+
+<!-- ================= TOOL ================= -->
+<section class="section section--alt" id="tool">
+  <div class="wrap">
+    <span class="kicker">The Tooling</span>
+    <h2 class="h2">MAESTRO Sentinel</h2>
+    <p class="lead">A threat modeling platform that runs the full MAESTRO analysis for you — describe or upload your
+      architecture, and it maps threats across all seven layers, cross-referenced to OWASP AIVSS, MITRE ATLAS &amp; OWASP Agentic Top 10.</p>
+    <p class="lead"><a class="link" href="https://maestro-sentinel.com/" target="_blank" rel="noopener">https://maestro-sentinel.com/ ↗</a></p>
+
+    <div class="tool__grid">
+      <div class="mock"><div class="draw" id="fig-tool-input" data-fig="tool-input"></div><p class="cap">1 · Describe your architecture</p></div>
+      <div class="mock"><div class="draw" id="fig-tool-library" data-fig="tool-library"></div><p class="cap">2 · Threat intelligence library</p></div>
+      <div class="mock"><div class="draw" id="fig-tool-detail" data-fig="tool-detail"></div><p class="cap">3 · Per-threat analysis &amp; mitigation</p></div>
+    </div>
+
+    <div class="tool__cta">
+      <a class="btn btn--accent" href="https://maestro-sentinel.com/" target="_blank" rel="noopener">Run a MAESTRO analysis ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section section--dark" id="contact">
+  <div class="wrap contact">
+    <div>
+      <span class="kicker kicker--light">Connect</span>
+      <h2 class="h2 h2--light">Let's talk agentic security</h2>
+      <p class="lead lead--light">Ken Huang, CISSP — AI Book Author · Speaker · DistributedApps.AI · OWASP Top 10 for LLM Apps.</p>
+      <p class="lead lead--light">Scan the code or reach out to continue the conversation on threat modeling for agentic AI.</p>
+    </div>
+    <figure class="contact__card">
+      <img src="assets/contact-card.png" alt="Ken Huang contact card with QR code" />
+    </figure>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>MAESTRO — 7-Layer Threat Modeling Framework for Agentic AI</span>
+  <span>© <span id="yr"></span> Ken Huang · DistributedApps.ai</span>
+</footer>
+
+<script src="assets/rough.min.js"></script>
+<script src="assets/diagrams.js"></script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
