@@ -69,6 +69,10 @@ a{color:inherit}
 .hero__sub strong{color:#fff;font-weight:600}
 .hero__by{position:relative;color:#9aa2b1;font-size:clamp(.9rem,2.2vh,1.05rem)}
 .hero__by strong{color:#fff}
+.hero__site{position:relative;display:inline-block;margin-top:1.4vh;font-family:var(--hand);
+  font-size:clamp(.95rem,2.2vh,1.15rem);color:var(--accent-2);text-decoration:none;
+  border-bottom:1.5px solid rgba(255,180,84,.4);transition:color .2s,border-color .2s}
+.hero__site:hover{color:#fff;border-color:#fff}
 
 /* ---------- about ---------- */
 .about{display:grid;grid-template-columns:1.25fr .75fr;gap:3vw;margin-top:1.4vh;align-items:center}
