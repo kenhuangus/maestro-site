@@ -109,6 +109,11 @@ a{color:inherit}
 /* ---------- contact ---------- */
 .contact{display:grid;grid-template-columns:1.15fr .85fr;gap:4vw;align-items:center}
 .contact__card img{border-radius:16px;max-width:300px;margin:0 auto;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.sources{margin-top:1.6vh;display:flex;flex-direction:column;gap:.5vh}
+.sources__label{font-family:var(--hand);color:var(--accent-2);font-size:.95rem;margin-bottom:.2vh}
+.sources a{color:#cdd2db;font-size:clamp(.8rem,1.8vh,.95rem);text-decoration:none;
+  border-bottom:1px solid rgba(255,255,255,.15);width:fit-content;transition:color .2s,border-color .2s}
+.sources a:hover{color:var(--accent-2);border-color:var(--accent-2)}
 .btn{display:inline-block;margin-top:2vh;padding:.7rem 1.3rem;border-radius:999px;font-weight:600;
   font-size:.95rem;text-decoration:none;transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
