@@ -62,6 +62,9 @@ a{color:inherit}
   margin-bottom:1.4vh;transform:rotate(-1deg)}
 .hero__title{position:relative;font-size:clamp(3.4rem,15vh,9rem);font-weight:700;letter-spacing:-.03em;
   background:linear-gradient(120deg,#fff 30%,var(--accent) 110%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero__acronym{position:relative;font-family:var(--hand);font-size:clamp(1rem,2.8vh,1.5rem);
+  margin:.4vh 0 0;color:#cdd2db;letter-spacing:.01em}
+.hero__acronym b{color:var(--accent-2);font-weight:700}
 .hero__sub{position:relative;font-size:clamp(1.1rem,3.4vh,1.9rem);font-weight:400;margin:.6vh 0 2.2vh;color:#cdd2db}
 .hero__sub strong{color:#fff;font-weight:600}
 .hero__by{position:relative;color:#9aa2b1;font-size:clamp(.9rem,2.2vh,1.05rem)}
