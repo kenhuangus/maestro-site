@@ -1,9 +1,13 @@
 # MAESTRO — The 7-Layer Threat Modeling Framework for Agentic AI
 
-A self-contained, GitHub Pages–ready presentation site for Ken Huang's talk on the
-**MAESTRO** threat modeling framework. Built from the original slide deck, with every
-figure **re-drawn by hand** in an Excalidraw style (rough.js) — no screenshots of slides,
-no external runtime dependencies.
+A self-contained, GitHub Pages–ready **slide deck** for Ken Huang's talk on the
+**MAESTRO** threat modeling framework. Presents as full-screen slides (one per screen,
+no scrolling) with **Prev / Next buttons**, keyboard arrows, swipe, click-dots, and a
+progress bar. Every figure is **re-drawn by hand** in an Excalidraw style (rough.js) —
+no screenshots of slides, no external runtime dependencies.
+
+**Navigation:** `→ / Space / PageDown` next · `← / PageUp` prev · `Home / End` first/last ·
+swipe or scroll on touch/trackpad · click the dots · deep-link a slide with `#3` in the URL.
 
 ## What's inside
 
@@ -12,6 +16,7 @@ no external runtime dependencies.
 | `index.html` | The single-page site (hero, about, why, 7 layers, method, tool, contact) |
 | `assets/style.css` | GauntletAI-inspired design system (Space Grotesk + Inter + Kalam) |
 | `assets/diagrams.js` | Hand-drawn (Excalidraw-style) figures rendered at runtime with rough.js |
+| `assets/deck.js` | Slide navigation — Prev/Next, keyboard, swipe, dots, progress |
 | `assets/rough.min.js` | Vendored rough.js v4.6.6 (no CDN — works offline & on Pages) |
 | `assets/books.png`, `assets/contact-card.png` | Author imagery extracted from the deck |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |

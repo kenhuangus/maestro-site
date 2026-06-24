@@ -278,21 +278,11 @@
   function render() {
     document.querySelectorAll("[data-fig]").forEach(host => {
       if (host.dataset.done) return; host.dataset.done = "1";
-      const dark = !!host.closest(".section--dark");
+      const dark = !!host.closest(".section--dark, .slide--dark");
       try { FIGS[host.dataset.fig](host, dark); } catch (e) { console.error(host.dataset.fig, e); }
     });
   }
 
-  /* reveal-on-scroll */
-  function reveal() {
-    const els = document.querySelectorAll(".draw,.card,.about__list li,.mock");
-    if (!("IntersectionObserver" in window)) { els.forEach(e => e.classList.add("is-in")); return; }
-    const io = new IntersectionObserver((ents) => {
-      ents.forEach(en => { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } });
-    }, { threshold: .15 });
-    els.forEach(e => io.observe(e));
-  }
-
-  if (document.readyState !== "loading") { render(); reveal(); }
-  else document.addEventListener("DOMContentLoaded", () => { render(); reveal(); });
+  if (document.readyState !== "loading") { render(); }
+  else document.addEventListener("DOMContentLoaded", render);
 })();
