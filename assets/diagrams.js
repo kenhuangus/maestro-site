@@ -88,7 +88,7 @@
       ["Autonomy", COL.green, "acts without a human in the loop"],
       ["Fixed trust boundary", COL.orange, "boundaries shift at runtime"],
       ["Static identity", COL.violet, "identity & access are dynamic"],
-      ["Single-agent scope", COL.red, "multi-agent comms & workflows"],
+      ["Complex multi-agent systems", COL.red, "many agents, comms & workflows"],
     ];
     const x0 = 470, w = 330, h = 56, gap = 22;
     const totalH = items.length * h + (items.length - 1) * gap;
