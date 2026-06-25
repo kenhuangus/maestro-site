@@ -79,9 +79,9 @@
   function figLimitations(host) {
     const s = scene(host, 820, 430);
     rect(s, 24, 150, 300, 130, { fill: hex(COL.accent, .1), fillStyle: "solid", stroke: COL.accent, strokeWidth: 2.4 });
-    txt(s, 174, 200, "Legacy threat", { size: 22, anchor: "middle", weight: 700 });
-    txt(s, 174, 228, "modeling assumes…", { size: 22, anchor: "middle", weight: 700 });
-    txt(s, 174, 258, "(and agents break it)", { size: 15, anchor: "middle", col: COL.slate });
+    txt(s, 174, 195, "Why Legacy", { size: 22, anchor: "middle", weight: 700 });
+    txt(s, 174, 223, "Threat Models Are", { size: 22, anchor: "middle", weight: 700 });
+    txt(s, 174, 251, "Not Sufficient", { size: 22, anchor: "middle", weight: 700 });
 
     const items = [
       ["Non-determinism", COL.blue, "same input → different action"],
