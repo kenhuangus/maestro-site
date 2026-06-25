@@ -86,7 +86,7 @@
     const items = [
       ["Non-determinism", COL.blue, "same input → different action"],
       ["Autonomy", COL.green, "acts without a human in the loop"],
-      ["Fixed trust boundary", COL.orange, "boundaries shift at runtime"],
+      ["No trust boundary", COL.orange, "boundaries shift at runtime"],
       ["Dynamic identity & intent", COL.violet, "+ intent mis-alignment"],
       ["Complex multi-agent systems", COL.red, "many agents, comms & workflows"],
     ];
