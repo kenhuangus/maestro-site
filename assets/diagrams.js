@@ -87,7 +87,7 @@
       ["Non-determinism", COL.blue, "same input → different action"],
       ["Autonomy", COL.green, "acts without a human in the loop"],
       ["Fixed trust boundary", COL.orange, "boundaries shift at runtime"],
-      ["Static identity", COL.violet, "identity & access are dynamic"],
+      ["Dynamic identity & intent", COL.violet, "+ intent mis-alignment"],
       ["Complex multi-agent systems", COL.red, "many agents, comms & workflows"],
     ];
     const x0 = 470, w = 330, h = 56, gap = 22;
